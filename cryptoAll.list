@@ -6,6 +6,7 @@ DOMAIN-SUFFIX,btc.com
 DOMAIN-SUFFIX,ethereum.org
 DOMAIN-SUFFIX,metamask.io
 DOMAIN-SUFFIX,coingecko.com
+DOMAIN-SUFFIX,tonwhales.com
 
 # Forum
 DOMAIN-SUFFIX,bitcointalk.org
