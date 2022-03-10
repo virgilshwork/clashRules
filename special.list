@@ -2,3 +2,6 @@
 
 # microsoft network test
 DOMAIN-SUFFIX,msftconnecttest.com
+
+# VPS sites
+DOMAIN-SUFFIX,vultr.com
