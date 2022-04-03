@@ -13,6 +13,7 @@ DOMAIN-SUFFIX,etherscan.io
 DOMAIN-SUFFIX,bitcointalk.org
 
 # Exchange
+DOMAIN-SUFFIX,anyswap.exchange
 DOMAIN-SUFFIX,polygonscan.com
 DOMAIN-SUFFIX,aex.com
 DOMAIN-SUFFIX,bibox.com
