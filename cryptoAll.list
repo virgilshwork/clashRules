@@ -14,6 +14,7 @@ DOMAIN-SUFFIX,opensea.io
 DOMAIN-SUFFIX,bitcointalk.org
 
 # Exchange
+DOMAIN-SUFFIX,cryptocompare.com
 DOMAIN-SUFFIX,anyswap.exchange
 DOMAIN-SUFFIX,polygonscan.com
 DOMAIN-SUFFIX,aex.com
