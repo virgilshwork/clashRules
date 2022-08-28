@@ -47,12 +47,14 @@ DOMAIN-SUFFIX,zb.com
 DOMAIN-SUFFIX,binance.cc
 DOMAIN-SUFFIX,binance.cloud
 DOMAIN-SUFFIX,binance.com
+DOMAIN-SUFFIX,binance.org
 DOMAIN-SUFFIX,binance.im
 DOMAIN-SUFFIX,binance.me
 DOMAIN-SUFFIX,binance.us
 DOMAIN-SUFFIX,bnappzh.com
 DOMAIN-SUFFIX,bnbstatic.com
 DOMAIN-SUFFIX,bntrace.com
+DOMAIN-SUFFIX,bscscan.com
 
 # Analysis
 DOMAIN-SUFFIX,aicoin.com
