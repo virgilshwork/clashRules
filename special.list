@@ -1,10 +1,10 @@
 # 内容：special
 
-# microsoft network test
-DOMAIN-SUFFIX,msftconnecttest.com
-
 # VPS sites
 DOMAIN-SUFFIX,vultr.com
 
 # Googlevideo.com
 DOMAIN-SUFFIX,googlevideo.com
+
+# microsoft network test
+DOMAIN-SUFFIX,msftconnecttest.com
