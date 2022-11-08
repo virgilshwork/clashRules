@@ -1,10 +1,5 @@
-# 内容：special
+# 内容：special count.3
 
-# VPS sites
-DOMAIN-SUFFIX,vultr.com
-
-# Googlevideo.com
 DOMAIN-SUFFIX,googlevideo.com
-
-# microsoft network test
+DOMAIN-SUFFIX,vultr.com
 DOMAIN-SUFFIX,msftconnecttest.com
