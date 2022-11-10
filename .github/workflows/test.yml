@@ -28,10 +28,10 @@ jobs:
 
       - name: Run a multi-line script
         run: |
-          curl https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Online_Full_MultiMode.ini > ACL4SSR.ini
-          sed -i '/LocalAreaNetwork.list/ r custom_ruleset.txt' ACL4SSR.ini
-          sed -i '/负载均衡`load-balance/ r custom_proxy_group.txt' ACL4SSR.ini
-          cat ACL4SSR.ini
+          curl https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Online_Full_MultiMode.ini > hellcat.ini
+          sed -i '/LocalAreaNetwork.list/ r custom_ruleset.txt' hellcat.ini
+          sed -i '/负载均衡`load-balance/ r custom_proxy_group.txt' hellcat.ini
+          cat hellcat.ini
 
       - name: Commit files
         run: |
