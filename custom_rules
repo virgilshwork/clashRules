@@ -1,8 +1,6 @@
-#VAR1='LocalAreaNetwork.list'
-VAR1='Bilibili.list'
-
+VAR1='LocalAreaNetwork.list'
 cat >VAR1<<- 'EOF'
-ruleset=Ⓜ️ 加密货币,https://raw.githubusercontent.com/hellcatjack/clashRules/main/cryptoAll.list
+ruleset=Ⓜ️ 加密货币,https://raw.githubusercontent.com/hellcatjack/clashRules/main/aaaa.list
 ruleset=Ⓜ️ 特殊指定,https://raw.githubusercontent.com/hellcatjack/clashRules/main/special.list
 EOF
 
