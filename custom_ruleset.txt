@@ -1,2 +1,0 @@
-ruleset=Ⓜ️ 加密货币,https://raw.githubusercontent.com/hellcatjack/clashRules/main/cryptoAll.list
-ruleset=Ⓜ️ 特殊指定,https://raw.githubusercontent.com/hellcatjack/clashRules/main/special.list
