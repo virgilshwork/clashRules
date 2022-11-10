@@ -29,8 +29,9 @@ jobs:
       - name: Run a multi-line script
         run: |
           curl https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Online_Full_MultiMode.ini > hellcat.ini
-          sed -i '/LocalAreaNetwork.list/ r custom_ruleset.txt' hellcat.ini
-          sed -i '/负载均衡`load-balance/ r custom_proxy_group.txt' hellcat.ini
+          source cmd
+          sed -i "/$VAR1/r VAR1" hellcat.ini
+          sed -i "/$VAR2/r VAR2" hellcat.ini
           cat hellcat.ini
 
       - name: Commit files
