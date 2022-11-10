@@ -15,3 +15,8 @@ repTo1="\[\]PASS\`\[\]DIRECT\`\[\]REJECT"
 
 repFrom2="漏网之鱼\`select\`\[\]"
 repTo2="漏网之鱼\`select\`\[\]PASS\`\[\]"
+
+sed -i "/$VAR1/r VAR1" hellcat.ini
+sed -i "/$VAR2/r VAR2" hellcat.ini
+sed -i "s/$repFrom1/$repTo1/g" hellcat.ini
+sed -i "s/$repFrom2/$repTo2/g" hellcat.ini
