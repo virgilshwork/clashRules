@@ -5,14 +5,12 @@ ruleset=Ⓜ️ 加密货币,https://raw.githubusercontent.com/hellcatjack/clashR
 ruleset=Ⓜ️ 特殊指定,https://raw.githubusercontent.com/hellcatjack/clashRules/main/special.list
 EOF
 
-VAR2='负载均衡`load-balance`'
+#VAR2='负载均衡`load-balance`'
+VAR2='Bilibili.list'
 cat >VAR2<<- 'EOF'
 custom_proxy_group=Ⓜ️ 加密货币`select`[]REJECT`[]🔯 故障转移`[]🚀 节点选择`[]♻️ 自动选择`[]🇸🇬 狮城节点`[]🇭🇰 香港节点`[]🇨🇳 台湾节点`[]🇯🇵 日本节点`[]🇺🇲 美国节点`[]🇰🇷 韩国节点`[]🚀 手动切换`[]DIRECT
 custom_proxy_group=Ⓜ️ 特殊指定`select`[]🚀 节点选择`[]♻️ 自动选择`[]🇸🇬 狮城节点`[]🇭🇰 香港节点`[]🇨🇳 台湾节点`[]🇯🇵 日本节点`[]🇺🇲 美国节点`[]🇰🇷 韩国节点`[]🚀 手动切换`[]DIRECT
 EOF
 
-#repFrom="\[\]REJECT\`\[\]DIRECT"
-#repTo="\[\]PASS\`\[\]DIRECT\`\[\]REJECT"
-
-repFrom="ruleset=📺 哔哩哔哩"
-repTo="ruleset=Ⓜ️ 加密货币"
+repFrom="\[\]REJECT\`\[\]DIRECT"
+repTo="\[\]PASS\`\[\]DIRECT\`\[\]REJECT"
