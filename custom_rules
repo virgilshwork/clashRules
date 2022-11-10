@@ -1,7 +1,7 @@
 VAR1='LocalAreaNetwork.list'
 cat >VAR1<<- 'EOF'
-ruleset=Ⓜ️ 加密货币,https://raw.githubusercontent.com/hellcatjack/clashRules/main/aaaa.list
-ruleset=Ⓜ️ 特殊指定,https://raw.githubusercontent.com/hellcatjack/clashRules/main/special.list
+ruleset=Ⓜ️ 加密货币,https://raw.githubusercontent.com/hellcatjack/clashRules/main/01_cryptoAll.list
+ruleset=Ⓜ️ 特殊指定,https://raw.githubusercontent.com/hellcatjack/clashRules/main/01_special.list
 EOF
 
 VAR2='负载均衡`load-balance`'
