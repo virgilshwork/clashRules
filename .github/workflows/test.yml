@@ -30,10 +30,6 @@ jobs:
         run: |
           curl https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Online_Full_MultiMode.ini > hellcat.ini
           source custom_rules
-          sed -i "/$VAR1/r VAR1" hellcat.ini
-          sed -i "/$VAR2/r VAR2" hellcat.ini
-          sed -i "s/$repFrom1/$repTo1/g" hellcat.ini
-          sed -i "s/$repFrom2/$repTo2/g" hellcat.ini
           cat hellcat.ini
 
       - name: Commit files
