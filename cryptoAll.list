@@ -1,6 +1,8 @@
 # 内容：cryptoAll
 # 数量：61条
 
+DOMAIN-SUFFIX,bilibili.com
+
 # coins
 DOMAIN-SUFFIX,btc.com
 DOMAIN-SUFFIX,ethereum.org
