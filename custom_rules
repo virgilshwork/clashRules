@@ -12,4 +12,4 @@ custom_proxy_group=Ⓜ️ 特殊指定`select`[]🚀 节点选择`[]♻️ 自�
 EOF
 
 repFrom='[]REJECT`[]DIRECT'
-repTo='[]PASS`[]REJECT`[]DIRECT'
+repTo='[]PASS`[]DIRECT`[]REJECT'
