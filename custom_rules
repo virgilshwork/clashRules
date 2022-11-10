@@ -14,5 +14,5 @@ EOF
 #repFrom="\[\]REJECT\`\[\]DIRECT"
 #repTo="\[\]PASS\`\[\]DIRECT\`\[\]REJECT"
 
-repFrom="📺 哔哩哔哩"
-repTo="Ⓜ️ 加密货币"
+repFrom="ruleset=📺 哔哩哔哩"
+repTo="ruleset=Ⓜ️ 加密货币"
