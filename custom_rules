@@ -10,8 +10,7 @@ custom_proxy_group=Ⓜ️ 加密货币`select`[]🚀 节点选择`[]🔯 故障�
 custom_proxy_group=Ⓜ️ 特殊指定`select`[]🚀 节点选择`[]♻️ 自动选择`[]🇸🇬 狮城节点`[]🇭🇰 香港节点`[]🇨🇳 台湾节点`[]🇯🇵 日本节点`[]🇺🇲 美国节点`[]🇰🇷 韩国节点`[]🚀 手动切换`[]DIRECT
 EOF
 
-游戏平台`select`[]DIRECT`[]🚀 节点选择
 sed -i "/$VAR1/r VAR1" hellcat.ini
 sed -i "/$VAR2/r VAR2" hellcat.ini
-sed -i 's/[]REJECT\`[]DIRECT/[]PASS\`[]REJECT\`[]DIRECT/g' hellcat.ini
-sed -i 's/漏网之鱼\`select\`[]/漏网之鱼\`select\`[]PASS\`[]/g' hellcat.ini
+sed -i 's/[]REJECT`[]DIRECT/[]PASS`[]REJECT`[]DIRECT/g' hellcat.ini
+sed -i 's/漏网之鱼`select`[]/漏网之鱼`select`[]PASS`[]/g' hellcat.ini
