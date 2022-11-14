@@ -12,22 +12,29 @@ custom_proxy_group=Ⓜ️ 特殊指定`select`[]🚀 节点选择`[]♻️ 自�
 EOF
 
 ######## 替换文本 from/to必须成对出现
-from[0]='select`[]REJECT`[]DIRECT'
-to[0]='select`[]PASS`[]REJECT`[]DIRECT'
-
-from[1]='漏网之鱼`select`[]'
-to[1]='漏网之鱼`select`[]PASS`[]'
-
-from[2]='select`[]🇨🇳 台湾节点`[]🚀 节点选择`'
-to[2]='select`[]🚀 节点选择`[]🇨🇳 台湾节点`'
-
-from[3]='游戏平台`select`[]DIRECT`[]🚀 节点选择'
-to[3]='游戏平台`select`[]🚀 节点选择`[]DIRECT'
+cat >replaceText<<- 'EOF'
+select`[]REJECT`[]DIRECT
+select`[]PASS`[]REJECT`[]DIRECT
+漏网之鱼`select`[]
+漏网之鱼`select`[]PASS`[]
+select`[]🇨🇳 台湾节点`[]🚀 节点选择`
+select`[]🚀 节点选择`[]🇨🇳 台湾节点`
+游戏平台`select`[]DIRECT`[]🚀 节点选择
+游戏平台`select`[]🚀 节点选择`[]DIRECT
+EOF
 
 ######## 执行指令
 sed -i "/$VAR1/r VAR1" hellcat.ini
 sed -i "/$VAR2/r VAR2" hellcat.ini
-
-for(( i=0;i<${#from[@]};i++)) do
-  sed -i "s/${from[i]//\[/\\[}/${to[i]//\[/\\[}/g" hellcat.ini
-done;
+checkPoint=0
+fromText=""
+cat replaceText | while read line
+do
+  if [ $checkPoint -eq "0" ]; then
+        fromText=$line
+        checkPoint=1
+  else
+        sed -i "s/${fromText//\[/\\[}/${line//\[/\\[}/g" hellcat.ini
+        checkPoint=0
+  fi
+done
