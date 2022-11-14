@@ -13,4 +13,5 @@ EOF
 游戏平台`select`[]DIRECT`[]🚀 节点选择
 sed -i "/$VAR1/r VAR1" hellcat.ini
 sed -i "/$VAR2/r VAR2" hellcat.ini
-sed -i 's/[]REJECT`[]DIRECT/[]PASS`[]REJECT`[]DIRECT/g' hellcat.ini
+sed -i 's/[]REJECT\`[]DIRECT/[]PASS\`[]REJECT\`[]DIRECT/g' hellcat.ini
+sed -i 's/漏网之鱼\`select\`[]/漏网之鱼\`select\`[]PASS\`[]/g' hellcat.ini
