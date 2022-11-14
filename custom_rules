@@ -26,5 +26,5 @@ sed -i "/$VAR1/r VAR1" hellcat.ini
 sed -i "/$VAR2/r VAR2" hellcat.ini
 
 for(( i=0;i<${#from[@]};i++)) do
-  sed -i "s/${from[i]/\[/\\[}/${to[i]/\[/\\[}/g" hellcat.ini
+  sed -i "s/${from[i]//\[/\\[}/${to[i]//\[/\\[}/g" hellcat.ini
 done;
