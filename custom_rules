@@ -11,9 +11,20 @@ custom_proxy_group=Ⓜ️ 加密货币`select`[]🚀 节点选择`[]🔯 故障�
 custom_proxy_group=Ⓜ️ 特殊指定`select`[]🚀 节点选择`[]♻️ 自动选择`[]🇸🇬 狮城节点`[]🇭🇰 香港节点`[]🇨🇳 台湾节点`[]🇯🇵 日本节点`[]🇺🇲 美国节点`[]🇰🇷 韩国节点`[]🚀 手动切换`[]DIRECT
 EOF
 ######## 替换文本
+from[0]='select`[]REJECT`[]DIRECT'
+to[0]='select`[]PASS`[]REJECT`[]DIRECT'
+
+from[1]='漏网之鱼`select`[]'
+to[1]='漏网之鱼`select`[]PASS`[]'
+
+from[2]='select`[]🇨🇳 台湾节点`[]🚀 节点选择`'
+to[2]='select`[]🚀 节点选择`[]🇨🇳 台湾节点`'
+
 
 ######## 执行指令
 sed -i "/$VAR1/r VAR1" hellcat.ini
 sed -i "/$VAR2/r VAR2" hellcat.ini
-sed -i 's/\[\]REJECT`\[\]DIRECT/\[\]PASS`\[\]REJECT`\[\]DIRECT/g' hellcat.ini
-sed -i 's/漏网之鱼`select`\[\]/漏网之鱼`select`\[\]PASS`\[\]/g' hellcat.ini
+
+for(( i=0;i<${#from[@]};i++)) do
+  sed -i "s/${from[i]/\[/\\[}/${to[i]/\[/\\[}/g" hellcat.ini
+done;
