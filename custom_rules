@@ -1,3 +1,4 @@
+######## 在VARn位置插入文本
 VAR1='LocalAreaNetwork.list'
 cat >VAR1<<- 'EOF'
 ruleset=Ⓜ️ 加密货币,https://raw.githubusercontent.com/hellcatjack/clashRules/main/01_cryptoAll.list
@@ -9,8 +10,10 @@ cat >VAR2<<- 'EOF'
 custom_proxy_group=Ⓜ️ 加密货币`select`[]🚀 节点选择`[]🔯 故障转移`[]♻️ 自动选择`[]🇸🇬 狮城节点`[]🇭🇰 香港节点`[]🇨🇳 台湾节点`[]🇯🇵 日本节点`[]🇺🇲 美国节点`[]🇰🇷 韩国节点`[]🚀 手动切换`[]DIRECT
 custom_proxy_group=Ⓜ️ 特殊指定`select`[]🚀 节点选择`[]♻️ 自动选择`[]🇸🇬 狮城节点`[]🇭🇰 香港节点`[]🇨🇳 台湾节点`[]🇯🇵 日本节点`[]🇺🇲 美国节点`[]🇰🇷 韩国节点`[]🚀 手动切换`[]DIRECT
 EOF
+######## 替换文本
 
+######## 执行指令
 sed -i "/$VAR1/r VAR1" hellcat.ini
 sed -i "/$VAR2/r VAR2" hellcat.ini
-sed -i 's/[]REJECT`[]DIRECT/[]PASS`[]REJECT`[]DIRECT/g' hellcat.ini
-sed -i 's/漏网之鱼`select`[]/漏网之鱼`select`[]PASS`[]/g' hellcat.ini
+sed -i 's/\[\]REJECT`\[\]DIRECT/\[\]PASS`\[\]REJECT`\[\]DIRECT/g' hellcat.ini
+sed -i 's/漏网之鱼`select`\[\]/漏网之鱼`select`\[\]PASS`\[\]/g' hellcat.ini
