@@ -7,9 +7,8 @@ on:
   # Triggers the workflow on push or pull request events but only for the "main" branch
   push:
     branches: [ "main" ]
-    paths:   # 这里是用来指定哪个文件更改，才会触发的
+    paths: 
       - 'custom*'
-
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -28,9 +27,7 @@ jobs:
 
       - name: Run a multi-line script
         run: |
-          curl https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Online_Full_MultiMode.ini > hellcat.ini
           source custom_rules
-          cat hellcat.ini
 
       - name: Commit files
         run: |
