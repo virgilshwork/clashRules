@@ -26,6 +26,9 @@ select`[]🚀 节点选择`[]🇨🇳 台湾节点`
 节点选择`select`[]♻️ 自动选择`[]🏰 常规自动`[]
 EOF
 
+######## 抓取ACL4SSR_Online_Full_MultiMode
+curl https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Online_Full_MultiMode.ini > hellcat.ini
+
 ######## 执行插入指令
 sed -i "/$VAR1/r VAR1" hellcat.ini
 sed -i "/$VAR2/r VAR2" hellcat.ini
