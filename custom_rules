@@ -14,7 +14,7 @@ EOF
 ######## 替换文本 from/to必须成对出现
 cat >replaceText<<- 'EOF'
 select`[]REJECT`[]DIRECT
-select`[]PASS`[]REJECT`[]DIRECT
+select`[]PASS`[]DIRECT`[]REJECT
 漏网之鱼`select`[]
 漏网之鱼`select`[]PASS`[]
 select`[]🇨🇳 台湾节点`[]🚀 节点选择`
