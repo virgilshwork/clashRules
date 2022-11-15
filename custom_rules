@@ -70,7 +70,7 @@ checkPoint=0
 fromText=""
 cat replaceText|while read line
 do
-  line=${line//\//\\//g}
+  line=${line//\//\\/}
   if [ $checkPoint -eq "0" ]; then
         fromText=$line
         checkPoint=1
