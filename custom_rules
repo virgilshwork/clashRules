@@ -44,6 +44,12 @@ ruleset=🌏 国内媒体,
 ;ruleset=🌏 国内媒体,
 custom_proxy_group=📺 哔哩哔哩
 ;custom_proxy_group=📺 哔哩哔哩
+ruleset=🎯 全球直连,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaDomain.list
+;ruleset=🎯 全球直连,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaDomain.list
+ruleset=🎯 全球直连,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaCompanyIp.list
+;ruleset=🎯 全球直连,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaCompanyIp.list
+ruleset=🎯 全球直连,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Download.list
+;ruleset=🎯 全球直连,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Download.list
 EOF
 
 #####################################################
@@ -64,6 +70,7 @@ checkPoint=0
 fromText=""
 cat replaceText|while read line
 do
+  line=${line//\//\\//g}
   if [ $checkPoint -eq "0" ]; then
         fromText=$line
         checkPoint=1
