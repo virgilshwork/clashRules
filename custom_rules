@@ -60,8 +60,6 @@ ruleset=🎯 全球直连,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/mast
 ;ruleset=🎯 全球直连,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaCompanyIp.list
 ruleset=🎯 全球直连,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Download.list
 ;ruleset=🎯 全球直连,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Download.list
-custom_proxy_group=🔮 负载均衡
-;custom_proxy_group=🔮 负载均衡
 EOF
 
 #####################################################
