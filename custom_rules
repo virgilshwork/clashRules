@@ -3,15 +3,23 @@
 #####################################################
 VAR1='LocalAreaNetwork.list'
 cat >VAR1<<- 'EOF'
-ruleset=💎 加密货币,https://raw.githubusercontent.com/hellcatjack/clashRules/main/01_cryptoAll.list
-ruleset=🐱 特殊指定,https://raw.githubusercontent.com/hellcatjack/clashRules/main/01_special.list
+ruleset=Ⓜ️ 加密货币,https://raw.githubusercontent.com/virgilshwork/clashrule/main/cryptoAll.list
+ruleset=Ⓜ️ 挖矿专区,https://raw.githubusercontent.com/virgilshwork/clashrule/main/cryptoMinerPool.list
+ruleset=Ⓜ️ 特殊指定,https://raw.githubusercontent.com/virgilshwork/clashrule/main/01_special.list
+ruleset=Ⓜ️ DenyKids,https://raw.githubusercontent.com/virgilshwork/clashrule/main/01_denykids.list
+ruleset=Ⓜ️ VPN,https://raw.githubusercontent.com/virgilshwork/clashrule/main/01_softether.list
+ruleset=Ⓜ️ 视频指定,https://raw.githubusercontent.com/virgilshwork/clashrule/main/01_video.list
 EOF
 
 VAR2='负载均衡`load-balance`'
 cat >VAR2<<- 'EOF'
 custom_proxy_group=🏰 常规自动`url-test`(Normal|normal|常规)`http://www.gstatic.com/generate_204`300,,50
-custom_proxy_group=💎 加密货币`select`[]🚀 节点选择`[]🔯 故障转移`[]♻️ 自动选择`[]🇸🇬 狮城节点`[]🇭🇰 香港节点`[]🇨🇳 台湾节点`[]🇯🇵 日本节点`[]🇺🇲 美国节点`[]🇰🇷 韩国节点`[]🚀 手动切换`[]DIRECT
-custom_proxy_group=🐱 特殊指定`select`[]🚀 节点选择`[]♻️ 自动选择`[]🇸🇬 狮城节点`[]🇭🇰 香港节点`[]🇨🇳 台湾节点`[]🇯🇵 日本节点`[]🇺🇲 美国节点`[]🇰🇷 韩国节点`[]🚀 手动切换`[]DIRECT
+custom_proxy_group=Ⓜ️ 加密货币`select`[]🔯 故障转移`[]🚀 节点选择`[]♻️ 自动选择`[]🇸🇬 狮城节点`[]🇭🇰 香港节点`[]🇨🇳 台湾节点`[]🇯🇵 日本节点`[]🇺🇲 美国节点`[]🇰🇷 韩国节点`[]🚀 手动切换`[]DIRECT
+custom_proxy_group=Ⓜ️ 挖矿专区`select`[]🔯 故障转移`[]🚀 节点选择`[]♻️ 自动选择`[]🚀 手动切换`[]DIRECT`[]🇯🇵 日本节点
+custom_proxy_group=Ⓜ️ 特殊指定`select`[]🚀 节点选择`[]♻️ 自动选择`[]🇸🇬 狮城节点`[]🇭🇰 香港节点`[]🇨🇳 台湾节点`[]🇯🇵 日本节点`[]🇺🇲 美国节点`[]🇰🇷 韩国节点`[]🚀 手动切换`[]DIRECT
+custom_proxy_group=Ⓜ️ DenyKids`select`[]PASS`[]DIRECT`[]REJECT
+custom_proxy_group=Ⓜ️ VPN`select`[]PASS`[]DIRECT`[]REJECT
+custom_proxy_group=Ⓜ️ 视频指定`select`[]🔯 故障转移`[]🚀 节点选择`[]♻️ 自动选择`[]🇭🇰 香港节点`[]🇯🇵 日本节点`[]🇺🇲 美国节点`[]🇰🇷 韩国节点`[]🚀 手动切换`[]DIRECT
 EOF
 
 #####################################################
