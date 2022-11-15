@@ -40,10 +40,6 @@ select`[]🚀 节点选择`[]🇨🇳 台湾节点`
 奈飞视频`select`[]🚀 节点选择
 custom_proxy_group=🎥 奈飞节点
 ;custom_proxy_group=🎥 奈飞节点
-custom_proxy_group=🇨🇳 台湾节点
-;custom_proxy_group=🇨🇳 台湾节点
-custom_proxy_group=🇸🇬 狮城节点
-;custom_proxy_group=🇸🇬 狮城节点
 ruleset=📺 哔哩哔哩
 ;ruleset=📺 哔哩哔哩
 ruleset=🌏 国内媒体
@@ -60,10 +56,6 @@ ruleset=🎶 网易音乐
 ;ruleset=🎶 网易音乐
 custom_proxy_group=🎶 网易音乐
 ;custom_proxy_group=🎶 网易音乐
-`[]🇨🇳 台湾节点
- 
-`[]🇸🇬 狮城节点
- 
 ruleset=🎯 全球直连,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaDomain.list
 ;ruleset=🎯 全球直连,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaDomain.list
 ruleset=🎯 全球直连,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaCompanyIp.list
