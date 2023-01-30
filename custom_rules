@@ -31,7 +31,7 @@ select`[]PASS`[]DIRECT`[]REJECT
 漏网之鱼`select`[]🚀 节点选择`[]♻️ 自动选择`[]DIRECT
 漏网之鱼`select`[]DIRECT`[]PASS`[]🚀 节点选择`[]♻️ 自动选择
 select`[]🇨🇳 台湾节点`[]🚀 节点选择`
-select`[]🚀 节点选择`[]🇨🇳 台湾节点`
+select`[]🚀 节点选择
 游戏平台`select`[]DIRECT`[]🚀 节点选择
 游戏平台`select`[]🚀 节点选择`[]DIRECT
 ♻️ 自动选择`[]
@@ -40,6 +40,8 @@ select`[]🚀 节点选择`[]🇨🇳 台湾节点`
 奈飞视频`select`[]🚀 节点选择
 custom_proxy_group=🎥 奈飞节点
 ;custom_proxy_group=🎥 奈飞节点
+custom_proxy_group=🇨🇳 台湾节点
+;custom_proxy_group=🇨🇳 台湾节点
 ruleset=📺 哔哩哔哩
 ;ruleset=📺 哔哩哔哩
 ruleset=🌏 国内媒体
