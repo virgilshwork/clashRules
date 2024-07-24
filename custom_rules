@@ -34,11 +34,11 @@ select`[]PASS`[]DIRECT`[]REJECT
 游戏平台`select`[]DIRECT`[]🚀 节点选择
 游戏平台`select`[]🚀 节点选择`[]DIRECT
 custom_proxy_group=♻️ 自动选择`url-test`.*
-custom_proxy_group=♻️ 自动选择`url-test`(JP|US|KR|SG)``http://www.apple.com/library/test/success.html`300,,50
+custom_proxy_group=♻️ 自动选择`url-test`(JP|US|KR|SG|HK)``http://www.apple.com/library/test/success.html`300,,50
 custom_proxy_group=🔯 故障转移`fallback`.*
-custom_proxy_group=🔯 故障转移`fallback`(JP|US|KR|SG)``http://www.apple.com/library/test/success.html`300,,50
+custom_proxy_group=🔯 故障转移`fallback`(JP|US|KR|SG|HK)``http://www.apple.com/library/test/success.html`300,,50
 custom_proxy_group=🔮 负载均衡`load-balance`.*
-custom_proxy_group=🔮 负载均衡`load-balance`(JP|US|KR|SG)``http://www.apple.com/library/test/success.html`300,,50
+custom_proxy_group=🔮 负载均衡`load-balance`(JP|US|KR|SG|HK)``http://www.apple.com/library/test/success.html`300,,50
 奈飞视频`select`[]🎥 奈飞节点`[]🚀 节点选择
 奈飞视频`select`[]🚀 节点选择
 custom_proxy_group=🎥 奈飞节点
