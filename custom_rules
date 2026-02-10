@@ -11,10 +11,10 @@ EOF
 
 VAR2='负载均衡`load-balance`'
 cat >VAR2<<- 'EOF'
-custom_proxy_group=Ⓜ️ 加密货币`select`[]🔯 故障转移`[]🚀 节点选择`[]♻️ 自动选择`[]🚀 手动切换`[]🇭🇰 香港节点`[]🇯🇵 日本节点`[]🇺🇲 美国节点`[]🇰🇷 韩国节点`[]DIRECT
-custom_proxy_group=Ⓜ️ 挖矿专区`select`[]🔯 故障转移`[]🚀 节点选择`[]♻️ 自动选择`[]🚀 手动切换`[]DIRECT`[]🇯🇵 日本节点
+custom_proxy_group=Ⓜ️ 加密货币`select`[]🔯 故障转移`[]🚀 节点选择`[]♻️ 自动选择`[]🚀 手动切换`[]🇭🇰 香港节点`[]🇺🇲 美国节点`[]DIRECT
+custom_proxy_group=Ⓜ️ 挖矿专区`select`[]🔯 故障转移`[]🚀 节点选择`[]♻️ 自动选择`[]🚀 手动切换`[]DIRECT`[]🇺🇲 美国节点
 custom_proxy_group=Ⓜ️ Direct`select`[]PASS`[]DIRECT`[]REJECT
-custom_proxy_group=Ⓜ️ Proxy`select`[]🔯 故障转移`[]🚀 节点选择`[]♻️ 自动选择`[]🚀 手动切换`[]🇭🇰 香港节点`[]🇯🇵 日本节点`[]🇺🇲 美国节点`[]🇰🇷 韩国节点`[]DIRECT
+custom_proxy_group=Ⓜ️ Proxy`select`[]🔯 故障转移`[]🚀 节点选择`[]♻️ 自动选择`[]🚀 手动切换`[]🇭🇰 香港节点`[]🇺🇲 美国节点`[]DIRECT
 EOF
 
 #####################################################
@@ -30,11 +30,11 @@ select`[]PASS`[]DIRECT`[]REJECT
 游戏平台`select`[]DIRECT`[]🚀 节点选择
 游戏平台`select`[]🚀 节点选择`[]DIRECT
 custom_proxy_group=♻️ 自动选择`url-test`.*
-custom_proxy_group=♻️ 自动选择`url-test`(JP|US|KR|SG|HK)``http://www.apple.com/library/test/success.html`300,,50
+custom_proxy_group=♻️ 自动选择`url-test`(US|HK)``http://www.apple.com/library/test/success.html`300,,50
 custom_proxy_group=🔯 故障转移`fallback`.*
-custom_proxy_group=🔯 故障转移`fallback`(JP|US|KR|SG|HK)``http://www.apple.com/library/test/success.html`300,,50
+custom_proxy_group=🔯 故障转移`fallback`(US|HK)``http://www.apple.com/library/test/success.html`300,,50
 custom_proxy_group=🔮 负载均衡`load-balance`.*
-custom_proxy_group=🔮 负载均衡`load-balance`(JP|US|KR|SG|HK)``http://www.apple.com/library/test/success.html`300,,50
+custom_proxy_group=🔮 负载均衡`load-balance`(US|HK)``http://www.apple.com/library/test/success.html`300,,50
 custom_proxy_group=🇨🇳 台湾节点
 ;custom_proxy_group=🇨🇳 台湾节点
 ;ruleset=🎯 全球直连,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaIp.list
